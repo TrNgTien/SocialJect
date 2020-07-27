@@ -19,7 +19,7 @@ export default function Screen2() {
     View 1: Button is named "Địa Điểm"
     View 2: Button is named "Độ Phổ Biến"
     View 3: Button is named "Quá Trình"
-    View 4: Button is named "Tìm dự án" 
+    View 4: Button is named "Tìm dự án"
     */
     <SafeAreaView style={styles.container}>
       <View style={styles.container}>
@@ -59,7 +59,7 @@ export default function Screen2() {
     </SafeAreaView>
   );
 }
-
+//////////////////////
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
