@@ -37,7 +37,9 @@ const ProjectList = props => {
 
     const [isOpenPlace_filter, setIsOpenPlace_filter] = React.useState(false);
     const [isOpenPopularity_filter, setIsOpenPopularity_filter] = React.useState(false);
-    const [isOpenProgress_filter, setIsOpenProgress_filter] = React.useState(false);
+
+  const [isOpenProgress_filter, setIsOpenProgress_filter] = React.useState(
+    false);
 
     // Handle the navigation to ProjectView (screen 4) when pressing
     const _onProjectView  = () => {
@@ -84,7 +86,7 @@ const ProjectList = props => {
                     
                 />
             </View>
-            <Modal visible={isOpenPlace_filter} animated={true} animationType='slide'>
+            <Modal visible={isOpenPlace_filter} animated={true} animationType="slide">
                 <View style={styles.container}>
                     <Text> Ho Chi Minh city </Text>
                     <Text> Da Nang </Text>
@@ -97,7 +99,7 @@ const ProjectList = props => {
                     />
                 </View>
             </Modal>
-            <Modal visible={isOpenPopularity_filter} animated={true} animationType='slide'>
+            <Modal visible={isOpenPopularity_filter} animated={true} animationType="slide">
                 <View style={styles.container}>
                     <Text> Ho Chi Minh city </Text>
                     <Text> Da Nang </Text>
@@ -110,7 +112,7 @@ const ProjectList = props => {
                     />
                 </View>
             </Modal>
-            <Modal visible={isOpenProgress_filter} animated={true} animationType='slide'>
+            <Modal visible={isOpenProgress_filter} animated={true} animationType="slide">
                 <View style={styles.container}>
                     <Text> Ho Chi Minh city </Text>
                     <Text> Da Nang </Text>

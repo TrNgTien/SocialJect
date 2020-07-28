@@ -1,32 +1,33 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
 /*
-Screen 2
-contribution: Tiến, Long
-DayStart: 25/7/2020 (Tiến)
-Main Function: export Screen02.
+* Where the application begins.
+* Contributors: {
+  Hiển Long: 17 June
+ 
+}
+*
+*
+* Changelog: {
+  17 June: Changed the default beginning code of react native to be more easy to read.
+}
+Main Function: export Screen02, navigation of screen3,4
 sub function: UI of Screen2 in Screen2.Js
 
 */
-import * as React from 'react';
+
+import React from 'react';
+// import MainNavigator from './src/navigation/core/MainNavigator';
 import {View, StyleSheet} from 'react-native';
 
 // You can import from local files
 import Screen2 from './screen/Screen2';
+import MainNavigator from './src/navigation/core/MainNavigator';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Screen2 />
-    </View>
+    <MainNavigator/>
+    
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
